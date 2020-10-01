@@ -10,6 +10,7 @@ class Gui(tkinter.Tk):
             super(Gui, self).__init__()
             self.title("File Integrity Verification Tool")
             self.minsize(525, 225)
+            self.resizable(False, False)
             self.task = tkinter.IntVar()
             self.task.set(2)
             self.label = tkinter.Label(self, text="Select a task below: ")
